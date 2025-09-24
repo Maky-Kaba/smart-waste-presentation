@@ -140,6 +140,380 @@
             </div>
         </section>
 
+        <section id="requirements" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#003f5c] mb-8">Kravanalys</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10 text-gray-700">Detta avsnitt bryter ner projektets omfattning genom att specificera kraven på teknisk, funktionell och icke-funktionell nivå, och därmed ge en tydlig bild av vad som är nödvändigt, önskvärt, och vad som ligger utanför ramen.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#7a5195]">Projektkrav</h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li>
+                            <p class="font-bold text-green-700">Måste ha</p>
+                            <ul class="list-disc list-inside">
+                                <li>Genomföras inom fastställda budget- och tidsramar.</li>
+                                <li>Klar för pilotstudie med minst 10 containrar.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="font-bold text-blue-700">Borde ha</p>
+                            <ul class="list-disc list-inside">
+                                <li>Visa tydlig ROI inom 12 månader efter piloten.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="font-bold text-gray-500">Kan ha</p>
+                            <ul class="list-disc list-inside">
+                                <li>Analys av potentiella samarbeten för uppskalning.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#7a5195]">Funktionella Krav</h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li>
+                            <p class="font-bold text-green-700">Måste ha</p>
+                            <ul class="list-disc list-inside">
+                                <li>Realtidsrapportering av fyllnadsgrad.</li>
+                                <li>Visa fyllnadsgrad på karta.</li>
+                                <li>Notifikationer till chaufförer.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="font-bold text-blue-700">Borde ha</p>
+                            <ul class="list-disc list-inside">
+                                <li>Generera optimerade tömningsrutter.</li>
+                                <li>Visa historisk data för analys.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="font-bold text-gray-500">Kan ha</p>
+                            <ul class="list-disc list-inside">
+                                <li>Prognostisera framtida fyllnadsgrad.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="font-bold text-red-700">Kommer inte att ha</p>
+                            <ul class="list-disc list-inside">
+                                <li>Funktion för betalning/fakturering.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#7a5195]">Icke-Funktionella Krav</h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li>
+                            <p class="font-bold text-green-700">Måste ha</p>
+                            <ul class="list-disc list-inside">
+                                <li>Minst 3 års batterilivslängd.</li>
+                                <li>99.5% drifttid (upptid).</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="font-bold text-blue-700">Borde ha</p>
+                            <ul class="list-disc list-inside">
+                                <li>Användarvänligt gränssnitt.</li>
+                                <li>Krypterad dataöverföring.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="font-bold text-gray-500">Kan ha</p>
+                            <ul class="list-disc list-inside">
+                                <li>Skalbarhet för upp till 500 sensorer.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="risk-analysis" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#003f5c] mb-8">Riskanalys</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10 text-gray-700">En bedömning av potentiella risker, deras sannolikhet och konsekvenser, samt strategier för att hantera dem. En proaktiv ansats som minskar osäkerheten i projektet.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-yellow-500">
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-800">Teknisk risk</h3>
+                    <p class="text-gray-600 mb-2">Sensorn mäter inte korrekt på grund av snö, skräp eller annan yttre påverkan.</p>
+                    <div class="flex justify-between items-center mb-4 text-sm font-semibold text-gray-700">
+                        <span class="inline-flex items-center">Sannolikhet: <span class="ml-1 px-2 py-0.5 rounded-full bg-yellow-500 text-white">Medium</span></span>
+                        <span class="inline-flex items-center">Konsekvens: <span class="ml-1 px-2 py-0.5 rounded-full bg-red-500 text-white">Hög</span></span>
+                    </div>
+                    <h4 class="font-bold text-gray-700">Åtgärdsförslag:</h4>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Välja robusta sensorer.</li>
+                        <li>Genomföra tekniskt proof-of-concept (POC).</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-yellow-500">
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-800">Ekonomisk risk</h3>
+                    <p class="text-gray-600 mb-2">Hårdvarukostnaderna överstiger budgeten.</p>
+                    <div class="flex justify-between items-center mb-4 text-sm font-semibold text-gray-700">
+                        <span class="inline-flex items-center">Sannolikhet: <span class="ml-1 px-2 py-0.5 rounded-full bg-yellow-500 text-white">Medium</span></span>
+                        <span class="inline-flex items-center">Konsekvens: <span class="ml-1 px-2 py-0.5 rounded-full bg-red-500 text-white">Hög</span></span>
+                    </div>
+                    <h4 class="font-bold text-gray-700">Åtgärdsförslag:</h4>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Jämföra offerter från flera leverantörer.</li>
+                        <li>Börja med en mindre pilotstudie.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-yellow-500">
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-800">Projektledning</h3>
+                    <p class="text-gray-600 mb-2">Projektet försenas på grund av integrationsproblem.</p>
+                    <div class="flex justify-between items-center mb-4 text-sm font-semibold text-gray-700">
+                        <span class="inline-flex items-center">Sannolikhet: <span class="ml-1 px-2 py-0.5 rounded-full bg-yellow-500 text-white">Medium</span></span>
+                        <span class="inline-flex items-center">Konsekvens: <span class="ml-1 px-2 py-0.5 rounded-full bg-yellow-500 text-white">Medium</span></span>
+                    </div>
+                    <h4 class="font-bold text-gray-700">Åtgärdsförslag:</h4>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Regelbundna möten med IT-avdelningen.</li>
+                        <li>Använda en agil projektmetodik.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-red-500">
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-800">Användar- & acceptansrisk</h3>
+                    <p class="text-gray-600 mb-2">Renhållningspersonalen är ovillig att använda tekniken.</p>
+                    <div class="flex justify-between items-center mb-4 text-sm font-semibold text-gray-700">
+                        <span class="inline-flex items-center">Sannolikhet: <span class="ml-1 px-2 py-0.5 rounded-full bg-red-500 text-white">Hög</span></span>
+                        <span class="inline-flex items-center">Konsekvens: <span class="ml-1 px-2 py-0.5 rounded-full bg-red-500 text-white">Hög</span></span>
+                    </div>
+                    <h4 class="font-bold text-gray-700">Åtgärdsförslag:</h4>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Involvera personal tidigt i processen.</li>
+                        <li>Utveckla användarvänligt gränssnitt.</li>
+                        <li>Erbjuda löpande support och utbildning.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-yellow-500">
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-800">Marknadsrisk</h3>
+                    <p class="text-600 mb-2">En konkurrerande, mer avancerad lösning lanseras.</p>
+                    <div class="flex justify-between items-center mb-4 text-sm font-semibold text-gray-700">
+                        <span class="inline-flex items-center">Sannolikhet: <span class="ml-1 px-2 py-0.5 rounded-full bg-yellow-500 text-white">Medium</span></span>
+                        <span class="inline-flex items-center">Konsekvens: <span class="ml-1 px-2 py-0.5 rounded-full bg-red-500 text-white">Hög</span></span>
+                    </div>
+                    <h4 class="font-bold text-gray-700">Åtgärdsförslag:</h4>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Kontinuerlig omvärldsanalys.</li>
+                        <li>Säkerställa flexibilitet och skalbarhet.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="economic-analysis" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#003f5c] mb-8">Ekonomisk analys</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10 text-gray-700">Denna analys bedömer projektets kostnadseffektivitet genom att bryta ner initiala och löpande kostnader, samt visa hur investeringen kan motiveras genom direkta besparingar.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-[#ffa600]">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#ffa600]">Initiala Kostnader</h3>
+                    <p class="text-sm text-gray-600 mb-4">Engångskostnader för uppstart och utveckling av pilotprojektet.</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><span class="font-bold">Hårdvara:</span> 30 000 kr</li>
+                        <li><span class="font-bold">Utvecklingstid:</span> 90 000 kr</li>
+                        <li><span class="font-bold">Prototyp:</span> 5 000 kr</li>
+                    </ul>
+                    <p class="mt-4 font-bold text-lg text-gray-800">Totalt Initialt: 125 000 kr</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-[#7a5195]">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#7a5195]">Löpande Kostnader</h3>
+                    <p class="text-sm text-gray-600 mb-4">Återkommande kostnader efter implementering.</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><span class="font-bold">Molntjänster:</span> 5 000 kr/år</li>
+                        <li><span class="font-bold">Kommunikation:</span> 2 200 kr/år</li>
+                        <li><span class="font-bold">Underhåll & Support:</span> 15 000 kr/år</li>
+                    </ul>
+                    <p class="mt-4 font-bold text-lg text-gray-800">Totalt Löpande: 22 200 kr/år</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-[#ef5675]">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#ef5675]">Besparingar & ROI</h3>
+                    <p class="text-sm text-gray-600 mb-4">Direkta besparingar från minskade tömningar.</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li><span class="font-bold">Beräknad besparing per bil:</span> 45 000 kr/år</li>
+                        <li><span class="font-bold">Återbetalningstid (ROI):</span> Cirka 2-3 år</li>
+                    </ul>
+                    <p class="mt-4 font-bold text-lg text-gray-800">Attraktiv återbetalningstid för ett kommunalt projekt.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="solution-alternatives" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#003f5c] mb-8">Lösningsalternativ och Prototyp</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10 text-gray-700">En utvärdering av olika tekniska tillvägagångssätt, från enkla till avancerade lösningar, med en rekommendation för en pilotprototyp som balanserar risk och nytta.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-gray-400">
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-700">Alternativ 1: Enkel och billig</h3>
+                    <p class="text-gray-600 mb-4">Använder ultraljudssensorer som rapporterar till en mobilapp på chaufförens telefon. Indikerar endast om en container är tom, halvfull eller full.</p>
+                    <div class="flex flex-col space-y-2">
+                        <p class="font-bold text-green-700">Fördelar</p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Låga initiala kostnader</li>
+                            <li>Snabb implementering</li>
+                        </ul>
+                        <p class="font-bold text-red-700">Nackdelar</p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Begränsad funktionalitet</li>
+                            <li>Mindre exakta data</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-gray-400">
+                    <h3 class="text-2xl font-semibold mb-3 text-gray-700">Alternativ 2: Avancerad och integrerad</h3>
+                    <p class="text-gray-600 mb-4">Använder avancerade sensorer som mäter fyllnadsgrad, vikt och temperatur. Data rapporteras via ett LoRaWAN-nätverk till en molnplattform för automatisk ruttoptimering.</p>
+                    <div class="flex flex-col space-y-2">
+                        <p class="font-bold text-green-700">Fördelar</p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Mer exakta data</li>
+                            <li>Avancerad ruttoptimering</li>
+                            <li>Framtidssäkert</li>
+                        </ul>
+                        <p class="font-bold text-red-700">Nackdelar</p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Högre kostnad</li>
+                            <li>Längre utvecklingstid</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-green-500">
+                    <h3 class="text-2xl font-semibold mb-3 text-green-700">Alternativ 3: Hybrid (Rekommenderad)</h3>
+                    <p class="text-gray-600 mb-4">Använder ultraljudssensorer kopplade till ett IoT-nätverk (som LoRaWAN) för att rapportera fyllnadsgrad. Data visualiseras i en enkel dashboard på kontoret, utan en mobilapp till att börja med.</p>
+                    <div class="flex flex-col space-y-2">
+                        <p class="font-bold text-green-700">Fördelar</p>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Minskar risker (tekniska och användarrelaterade)</li>
+                            <li>Relativt låg kostnad</li>
+                            <li>Ger möjlighet att testa konceptet innan fullskalig investering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 bg-white rounded-lg shadow-lg p-6 border-l-4 border-blue-500">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-700">Prototyp (Proof of Concept)</h3>
+                <p class="text-gray-600 mb-4">Målet med prototypen är att bevisa att grundtekniken fungerar. Vi verifierar att vi kan samla in data om fyllnadsgrad från en sensor på en container och skicka den till en enkel dashboard.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div>
+                        <h4 class="font-bold text-gray-700 mb-1">Hårdvara:</h4>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Ultraljudssensor</li>
+                            <li>Mikrokontroller (t.ex. ESP32)</li>
+                            <li>Kommunikationsmodul (t.ex. LoRa)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-700 mb-1">Mjukvara:</h4>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>Kod för att läsa av sensorn</li>
+                            <li>Dataöverföring till molnplattform (t.ex. The Things Network)</li>
+                            <li>Enkel webbsida för visualisering</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-gray-700 mb-1">Syfte:</h4>
+                        <p class="text-gray-600">Att bevisa att grundläggande datainsamling är tillförlitlig, inte användarvänlighet eller integration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="value-proposition" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#003f5c] mb-8">Värdeerbjudande i Fokus</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10 text-gray-700">Projektet skapar distinkta värden för flera nyckelintressenter. Visualiseringen nedan jämför den upplevda nyttan för varje grupp, från optimerad drift till en förbättrad stadsmiljö.</p>
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <div class="chart-container h-96 md:h-[450px]">
+                    <canvas id="valueChart"></canvas>
+                </div>
+            </div>
+        </section>
+        
+        <section id="bmc" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#003f5c] mb-8">Business Model Canvas</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10 text-gray-700">En komplett översikt av affärsmodellen som visar hur projektet skapar, levererar och fångar värde. Modellen binder samman allt från kundsegment till kostnadsstruktur.</p>
+            <div class="lg:hidden grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold text-[#003f5c] mb-3">Kundsegment</h3>
+                    <p class="text-gray-600">Renhållningsavdelningen, invånare, politiker och beslutsfattare.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold text-[#003f5c] mb-3">Värdeerbjudande</h3>
+                    <p class="text-gray-600">Optimerade rutter, minskade kostnader, renare stad, bättre arbetsvillkor.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold text-[#003f5c] mb-3">Kanaler</h3>
+                    <p class="text-gray-600">Direkt kommunikation, webbgränssnitt, rapporter och presentationer.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold text-[#003f5c] mb-3">Kundrelationer</h3>
+                    <p class="text-gray-600">Personlig support, anpassning efter feedback, utbildning och workshops.</p>
+                </div>
+                 <div class="bg-white rounded-lg shadow-lg p-6 md:col-span-2">
+                    <h3 class="text-xl font-semibold text-[#7a5195] mb-3">Intäktsströmmar</h3>
+                    <p class="text-gray-600">Indirekta intäkter genom betydande kostnadsbesparingar för kommunen (bränsle, personal, underhåll).</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold text-[#003f5c] mb-3">Nyckelaktiviteter</h3>
+                    <p class="text-gray-600">Utveckling av mjuk- och hårdvara, installation, datainsamling och analys.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold text-[#003f5c] mb-3">Nyckelresurser</h3>
+                    <p class="text-gray-600">Expertteam, sensorteknik, molntjänster, budget, och processkunskap.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold text-[#003f5c] mb-3">Nyckelpartners</h3>
+                    <p class="text-gray-600">Hårdvaruleverantörer, kommunens IT-avdelning, renhållningen, forskningsinstitut.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold text-[#ef5675] mb-3">Kostnadsstruktur</h3>
+                    <p class="text-gray-600">Fasta (lön), rörliga (hårdvara, molntjänster), och initiala (utveckling) kostnader.</p>
+                </div>
+            </div>
+            <div class="hidden lg:grid bmc-grid gap-6">
+                <div class="bg-white rounded-lg shadow-lg p-6 bmc-partners flex flex-col">
+                    <h3 class="text-xl font-semibold text-[#003f5c] mb-3">Nyckelpartners</h3>
+                    <p class="text-gray-600 flex-grow">Leverantörer, IT-avdelningen, Renhållningen, RISE.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 bmc-activities flex flex-col">
+                     <h3 class="text-xl font-semibold text-[#003f5c] mb-3">Nyckelaktiviteter</h3>
+                    <p class="text-gray-600 mb-2">Utveckling, Installation, Dataanalys.</p>
+                    <h3 class="text-xl font-semibold text-[#003f5c] mt-4 mb-3">Nyckelresurser</h3>
+                    <p class="text-gray-600 flex-grow">Team, Teknik, Budget, Kunskap.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 bmc-proposition flex flex-col justify-center items-center text-center bg-[#003f5c] text-white">
+                    <h3 class="text-2xl font-bold mb-3">Värdeerbjudande</h3>
+                    <p>Optimerad drift, minskade kostnader, hållbar innovation & renare stad.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 bmc-relationships flex flex-col">
+                    <h3 class="text-xl font-semibold text-[#003f5c] mb-3">Kundrelationer</h3>
+                    <p class="text-gray-600 mb-2">Personlig support, Workshops, Anpassning.</p>
+                    <h3 class="text-xl font-semibold text-[#003f5c] mt-4 mb-3">Kanaler</h3>
+                    <p class="text-gray-600 flex-grow">Direktkontakt, Webb-app, Rapporter.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 bmc-segments flex flex-col justify-center items-center text-center">
+                    <h3 class="text-xl font-semibold text-[#003f5c] mb-3">Kundsegment</h3>
+                    <p class="text-gray-600">Renhållnings-avdelningen</p>
+                    <p class="text-gray-600">Kommun & Politiker</p>
+                    <p class="text-600">Invånare</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 bmc-costs flex flex-col">
+                    <h3 class="text-xl font-semibold text-[#ef5675] mb-3">Kostnadsstruktur</h3>
+                    <p class="text-gray-600">Fasta (lön), rörliga (hårdvara, moln), Initiala (utveckling).</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 bmc-revenue flex flex-col">
+                    <h3 class="text-xl font-semibold text-[#7a5195] mb-3">Intäktsströmmar</h3>
+                    <p class="text-gray-600">Indirekta intäkter genom kostnadsbesparingar i bränsle, personal och underhåll.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cost-benefit" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#003f5c] mb-8">Kostnad kontra Besparing</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10 text-gray-700">En uppskattning av de primära kostnadstyperna ställt mot de förväntade direkta besparingarna. Analysen visar att investeringen genererar betydande ekonomiskt värde genom sänkta driftskostnader.</p>
+             <div class="bg-white rounded-lg shadow-lg p-6">
+                <div class="chart-container h-96 md:h-[450px]">
+                    <canvas id="costChart"></canvas>
+                </div>
+            </div>
+        </section>
+
         <section id="decision-document" class="mb-16">
             <h2 class="text-3xl font-bold text-center text-[#003f5c] mb-8">Beslutsdokument</h2>
             <p class="text-center max-w-3xl mx-auto mb-10 text-gray-700">En sammanfattning av förstudien, som presenterar den rekommenderade lösningen och syftet med projektet för beslutsfattare.</p>
@@ -165,7 +539,6 @@
     </div>
 
     <script>
-        // Helper function to wrap long labels for charts
         function wrapLabel(str) {
             const maxLength = 16;
             if (typeof str !== 'string' || str.length <= maxLength) {
@@ -185,22 +558,24 @@
             return lines;
         }
 
-        // Shared configuration for tooltips to handle wrapped labels correctly
-        const sharedTooltipConfig = {
+        const tooltipTitleCallback = {
             plugins: {
                 tooltip: {
                     callbacks: {
                         title: function(tooltipItems) {
                             const item = tooltipItems[0];
                             let label = item.chart.data.labels[item.dataIndex];
-                            return Array.isArray(label) ? label.join(' ') : label;
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            } else {
+                              return label;
+                            }
                         }
                     }
                 }
             }
         };
 
-        // Chart 1: Impact Chart (Radar)
         const impactCtx = document.getElementById('impactChart').getContext('2d');
         const impactChart = new Chart(impactCtx, {
             type: 'radar',
@@ -224,26 +599,37 @@
                 }]
             },
             options: {
-                ...sharedTooltipConfig,
+                ...tooltipTitleCallback,
                 maintainAspectRatio: false,
-                elements: { line: { borderWidth: 3 } },
+                elements: {
+                    line: {
+                        borderWidth: 3
+                    }
+                },
                 scales: {
                     r: {
-                        angleLines: { display: false },
+                        angleLines: {
+                            display: false
+                        },
                         suggestedMin: 0,
                         suggestedMax: 10,
-                        ticks: { display: false },
-                        grid: { color: 'rgba(0, 63, 92, 0.2)' }
+                        ticks: {
+                            display: false
+                        },
+                        grid: {
+                            color: 'rgba(0, 63, 92, 0.2)'
+                        }
                     }
                 },
                 plugins: {
-                    ...sharedTooltipConfig.plugins,
-                    legend: { display: false }
+                     ...tooltipTitleCallback.plugins,
+                    legend: {
+                        display: false
+                    }
                 }
             }
         });
 
-        // Chart 2: Value Chart (Bar)
         const valueCtx = document.getElementById('valueChart').getContext('2d');
         const valueChart = new Chart(valueCtx, {
             type: 'bar',
@@ -258,58 +644,100 @@
                 }]
             },
             options: {
-                ...sharedTooltipConfig,
+                ...tooltipTitleCallback,
                 indexAxis: 'y',
                 maintainAspectRatio: false,
                 scales: {
                     x: {
                         beginAtZero: true,
                         max: 10,
-                        grid: { color: '#e0e0e0' }
+                        grid: {
+                            color: '#e0e0e0'
+                        }
                     },
                     y: {
-                        grid: { display: false }
+                         grid: {
+                            display: false
+                        }
                     }
                 },
                 plugins: {
-                    ...sharedTooltipConfig.plugins,
-                    legend: { display: false }
+                    ...tooltipTitleCallback.plugins,
+                    legend: {
+                        display: false
+                    }
                 }
             }
         });
         
-        // Chart 3: Cost Chart (Stacked Bar)
         const costCtx = document.getElementById('costChart').getContext('2d');
         const costChart = new Chart(costCtx, {
             type: 'bar',
             data: {
                 labels: ['Kostnadskomponenter', 'Besparingspotential'],
                 datasets: [
-                    { label: 'Personal & Utveckling', data: [65, 0], backgroundColor: '#003f5c' },
-                    { label: 'Hårdvara & Molntjänster', data: [35, 0], backgroundColor: '#7a5195' },
-                    { label: 'Bränsle', data: [0, 50], backgroundColor: '#ef5675' },
-                    { label: 'Underhåll & Personal', data: [0, 50], backgroundColor: '#ffa600' }
+                    {
+                        label: 'Personal & Utveckling',
+                        data: [65, 0],
+                        backgroundColor: '#003f5c',
+                    },
+                    {
+                        label: 'Hårdvara & Molntjänster',
+                        data: [35, 0],
+                        backgroundColor: '#7a5195',
+                    },
+                    {
+                        label: 'Bränsle',
+                        data: [0, 50],
+                        backgroundColor: '#ef5675',
+                    },
+                    {
+                        label: 'Underhåll & Personal',
+                        data: [0, 50],
+                        backgroundColor: '#ffa600',
+                    }
                 ]
             },
             options: {
-                maintainAspectRatio: false,
+                ...tooltipTitleCallback,
+                 maintainAspectRatio: false,
                 scales: {
-                    x: { stacked: true, grid: { display: false } },
+                    x: {
+                        stacked: true,
+                        grid: {
+                            display: false
+                        }
+                    },
                     y: {
                         stacked: true,
                         beginAtZero: true,
-                        ticks: { callback: function(value) { return value + '%' } },
-                        grid: { color: '#e0e0e0' }
+                        ticks: {
+                            callback: function(value) {
+                                return value + '%'
+                            }
+                        },
+                         grid: {
+                            color: '#e0e0e0'
+                        }
                     }
                 },
                 plugins: {
-                    legend: { position: 'bottom' },
+                    ...tooltipTitleCallback.plugins,
+                    legend: {
+                        position: 'bottom',
+                    },
                     tooltip: {
+                         ...tooltipTitleCallback.plugins.tooltip,
                         callbacks: {
-                           label: function(context) {
+                            ...tooltipTitleCallback.plugins.tooltip.callbacks,
+                             label: function(context) {
                                 let label = context.dataset.label || '';
-                                if (label) { label += ': '; }
-                                if (context.parsed.y !== null) { label += context.parsed.y + '%'; }
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed.y !== null) {
+                                    label += context.parsed.y + '%';
+                                }
                                 return label;
                             }
                         }
@@ -317,6 +745,7 @@
                 }
             }
         });
+
     </script>
 </body>
 </html>
