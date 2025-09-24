@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Avfallshantering: En Infografik</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .bmc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        @media (min-width: 1024px) {
+            .bmc-grid {
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: auto auto auto;
+                grid-template-areas:
+                    "partners activities proposition relationships segments"
+                    "partners activities proposition relationships segments"
+                    "costs costs revenue revenue revenue";
+            }
+            .bmc-partners { grid-area: partners; }
+            .bmc-activities { grid-area: activities; }
+            .bmc-resources { grid-area: resources; }
+            .bmc-proposition { grid-area: proposition; }
+            .bmc-relationships { grid-area: relationships; }
+            .bmc-channels { grid-area: channels; }
+            .bmc-segments { grid-area: segments; }
+            .bmc-costs { grid-area: costs; }
+            .bmc-revenue { grid-area: revenue; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#003f5c] mb-2">Smart Avfallshantering</h1>
+            <p class="text-lg md:text-xl text-gray-600">En strategisk analys för implementering av IoT-baserad containerövervakning.</p>
+        </header>
+
+        <section id="swot" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#003f5c] mb-8">SWOT-analys</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10 text-gray-700">En översikt av de interna och externa faktorer som påverkar projektets framgång. Att förstå dessa är avgörande för strategisk planering och riskhantering.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-green-500">
+                    <h3 class="text-2xl font-semibold mb-3 text-green-700">Styrkor</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Färsk teknisk expertis inom IoT och inbyggda system.</li>
+                        <li>Tillgång till befintliga resurser som fordon och personal.</li>
+                        <li>Direkt kundkontakt för snabb feedback och anpassning.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-red-500">
+                    <h3 class="text-2xl font-semibold mb-3 text-red-700">Svagheter</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Nystartad avdelning som måste bevisa sitt värde.</li>
+                        <li>Potentiellt kulturellt motstånd mot ny teknik.</li>
+                        <li>Komplex integration med befintliga IT-system.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-blue-500">
+                    <h3 class="text-2xl font-semibold mb-3 text-blue-700">Möjligheter</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Starkt fokus på hållbarhet och FN:s Globala Mål.</li>
+                        <li>Potential för stor effektivisering och kostnadsminskning.</li>
+                        <li>Passar perfekt in i "Smarta Staden"-initiativ.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 border-l-4 border-yellow-500">
+                    <h3 class="text-2xl font-semibold mb-3 text-yellow-700">Hot</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Konkurrens från etablerade privata aktörer.</li>
+                        <li>Risk för snabba teknikskiften som gör lösningen omodern.</li>
+                        <li>Strikta krav kring dataskydd och efterlevnad av GDPR.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="goals" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#003f5c] mb-8">Projektets Mål & Effektmål</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10 text-gray-700">Förstudien definierar tydliga mål och önskade effekter för att säkerställa att projektet skapar konkret och mätbart värde för alla intressenter.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-2xl font-semibold text-[#7a5195] mb-4">Projektets Mål</h3>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-3">&#9989;</span>
+                            <div>
+                                <p class="font-bold">Implementering</p>
+                                <p>Installera ett nätverk med 50 smarta sensorer i en teststadsdel.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-3">&#128187;</span>
+                            <div>
+                                <p class="font-bold">Mjukvaruutveckling</p>
+                                <p>Bygga en plattform för insamling och visualisering av realtidsdata.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-3">&#128210;</span>
+                            <div>
+                                <p class="font-bold">Systemintegration</p>
+                                <p>Integrera plattformen med renhållningsavdelningens befintliga system.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center">
+                    <h3 class="text-2xl font-semibold text-[#ef5675] mb-4">Effektmål</h3>
+                    <p class="text-sm text-center mb-4 text-gray-600">En visualisering av de primära effektmålen, där varje axel representerar en viktig dimension av projektets framgång.</p>
+                    <div class="chart-container h-80 w-full">
+                        <canvas id="impactChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="decision-document" class="mb-16">
+            <h2 class="text-3xl font-bold text-center text-[#003f5c] mb-8">Beslutsdokument</h2>
+            <p class="text-center max-w-3xl mx-auto mb-10 text-gray-700">En sammanfattning av förstudien, som presenterar den rekommenderade lösningen och syftet med projektet för beslutsfattare.</p>
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-2xl font-bold mb-4 text-[#003f5c]">Projektrekommendation</h3>
+                <p class="text-gray-700 mb-4">Vi rekommenderar att starta en pilotstudie för Containerövervakning, baserad på den hybrida lösningsmodellen. Denna modell kombinerar den tekniska genomförbarheten hos en enkel prototyp med den strategiska potentialen hos ett mer avancerat system.</p>
+                
+                <h3 class="text-2xl font-bold mb-4 text-[#003f5c] mt-8">Sammanfattning av förstudien</h3>
+                <ul class="list-disc list-inside space-y-4 text-gray-700">
+                    <li><span class="font-bold">Projektmål och effektmål:</span> Målet är att implementera ett nätverk av 50 sensorer för att minska onödiga tömningar och därmed sänka driftskostnader och miljöpåverkan.</li>
+                    <li><span class="font-bold">Kravanalys:</span> De mest kritiska kraven (Must have) är att realtidsrapportering av fyllnadsgrad fungerar korrekt, att sensorns batteritid är minst 3 år, samt att systemet är tillgängligt med minst 99,5% drifttid.</li>
+                    <li><span class="font-bold">Riskanalys:</span> Vi har identifierat potentiella risker, framförallt kopplade till sensorernas tillförlitlighet i olika väderförhållanden samt risken för motstånd från användare.</li>
+                    <li><span class="font-bold">Ekonomisk analys:</span> Beräknade initiala kostnader uppgår till cirka 125 000 kr för pilotstudien. De förväntade årliga besparingarna för kommunen genom ruttoptimering uppskattas till 45 000 kr per fordon, vilket innebär att investeringen betalar sig på 2–3 år.</li>
+                    <li><span class="font-bold">Lösningsalternativ:</span> Efter en utvärdering av olika alternativ har vi valt en hybridlösning som bygger på robust men kostnadseffektiv teknik som kan skalas upp i framtiden. En teknisk prototyp (POC) kommer att byggas för att bekräfta att vår grundläggande teknologi fungerar som förväntat.</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer class="text-center pt-8 border-t border-gray-300">
+            <p class="text-gray-600">&copy; 2025 Intern IoT-avdelning. Främjar en smartare och mer hållbar stad.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        // Helper function to wrap long labels for charts
+        function wrapLabel(str) {
+            const maxLength = 16;
+            if (typeof str !== 'string' || str.length <= maxLength) {
+                return str;
+            }
+            const words = str.split(' ');
+            const lines = [];
+            let currentLine = '';
+            for (const word of words) {
+                if ((currentLine + word).length > maxLength) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            }
+            lines.push(currentLine.trim());
+            return lines;
+        }
+
+        // Shared configuration for tooltips to handle wrapped labels correctly
+        const sharedTooltipConfig = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            return Array.isArray(label) ? label.join(' ') : label;
+                        }
+                    }
+                }
+            }
+        };
+
+        // Chart 1: Impact Chart (Radar)
+        const impactCtx = document.getElementById('impactChart').getContext('2d');
+        const impactChart = new Chart(impactCtx, {
+            type: 'radar',
+            data: {
+                labels: [
+                    wrapLabel('Minskade driftskostnader'),
+                    wrapLabel('Förbättrad service och renlighet'),
+                    wrapLabel('Minskad klimatpåverkan'),
+                    wrapLabel('Visar avdelningens värde')
+                ],
+                datasets: [{
+                    label: 'Effektmål',
+                    data: [9, 8, 9, 10],
+                    fill: true,
+                    backgroundColor: 'rgba(122, 81, 149, 0.2)',
+                    borderColor: '#7a5195',
+                    pointBackgroundColor: '#7a5195',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#7a5195'
+                }]
+            },
+            options: {
+                ...sharedTooltipConfig,
+                maintainAspectRatio: false,
+                elements: { line: { borderWidth: 3 } },
+                scales: {
+                    r: {
+                        angleLines: { display: false },
+                        suggestedMin: 0,
+                        suggestedMax: 10,
+                        ticks: { display: false },
+                        grid: { color: 'rgba(0, 63, 92, 0.2)' }
+                    }
+                },
+                plugins: {
+                    ...sharedTooltipConfig.plugins,
+                    legend: { display: false }
+                }
+            }
+        });
+
+        // Chart 2: Value Chart (Bar)
+        const valueCtx = document.getElementById('valueChart').getContext('2d');
+        const valueChart = new Chart(valueCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Renhållningsavdelningen', 'Kommunen & Beslutsfattare', 'Anställda'],
+                datasets: [{
+                    label: 'Upplevd Nytta (Skala 1-10)',
+                    data: [9, 8, 7],
+                    backgroundColor: ['#003f5c', '#7a5195', '#ffa600'],
+                    borderColor: ['#003f5c', '#7a5195', '#ffa600'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                ...sharedTooltipConfig,
+                indexAxis: 'y',
+                maintainAspectRatio: false,
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        max: 10,
+                        grid: { color: '#e0e0e0' }
+                    },
+                    y: {
+                        grid: { display: false }
+                    }
+                },
+                plugins: {
+                    ...sharedTooltipConfig.plugins,
+                    legend: { display: false }
+                }
+            }
+        });
+        
+        // Chart 3: Cost Chart (Stacked Bar)
+        const costCtx = document.getElementById('costChart').getContext('2d');
+        const costChart = new Chart(costCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Kostnadskomponenter', 'Besparingspotential'],
+                datasets: [
+                    { label: 'Personal & Utveckling', data: [65, 0], backgroundColor: '#003f5c' },
+                    { label: 'Hårdvara & Molntjänster', data: [35, 0], backgroundColor: '#7a5195' },
+                    { label: 'Bränsle', data: [0, 50], backgroundColor: '#ef5675' },
+                    { label: 'Underhåll & Personal', data: [0, 50], backgroundColor: '#ffa600' }
+                ]
+            },
+            options: {
+                maintainAspectRatio: false,
+                scales: {
+                    x: { stacked: true, grid: { display: false } },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true,
+                        ticks: { callback: function(value) { return value + '%' } },
+                        grid: { color: '#e0e0e0' }
+                    }
+                },
+                plugins: {
+                    legend: { position: 'bottom' },
+                    tooltip: {
+                        callbacks: {
+                           label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) { label += ': '; }
+                                if (context.parsed.y !== null) { label += context.parsed.y + '%'; }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
